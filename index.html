@@ -7,9 +7,9 @@
 
     <title>Khao Niew&#39;s Classroom: The American Secret War in Laos</title>
 
-    <link type="text/css" rel="stylesheet" href="lib/icomoon.css">
-    <script type="text/javascript" src="lib/player-0.0.11.min.js"></script>
-    <script type="text/javascript" src="lib/lzwcompress.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/paung23/Articulate360ForKhaoNiewClassroom@main/lib/icomoon.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/paung23/Articulate360ForKhaoNiewClassroom@main/lib/player-0.0.11.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/paung23/Articulate360ForKhaoNiewClassroom@main/lib/lzwcompress.js"></script>
 
     <!-- Resize Hack -->
     <script type="text/javascript">
@@ -20,12 +20,12 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script id="__ENTRY__" type="application/json">
-      {".js":["rise/2f813331.js"]}
+    <script id="__ENTRY__"
+            src="https://cdn.jsdelivr.net/gh/paung23/Articulate360ForKhaoNiewClassroom@main/lib/rise/3502bc04.js">
     </script>
 
-    <script id="__REMOTE_ENTRIES__" type="application/json">
-      {"mondrian":{".js":["mondrian/entry.js"]}}
+    <script id="__REMOTE_ENTRIES__"
+            src="https://cdn.jsdelivr.net/gh/paung23/Articulate360ForKhaoNiewClassroom@main/lib/mondrian/entry.js">
     </script>
 
     <script>
@@ -112,7 +112,7 @@
             console.warn(`Could not load locale "${name}"`)
             name = window.i18n.available[0]
           }
-          const encoded = await __loadJsonp(`course:${name}`, `locales/${name}.js`)
+          const encoded = await __loadJsonp(`course:${name}`, `https://cdn.jsdelivr.net/gh/paung23/Articulate360ForKhaoNiewClassroom@main/locales/${name}.js`)
           const courseData = deserialize(encoded)
           return courseData
         }
@@ -137,11 +137,11 @@
     }
 
     function resolvePath(path) {
-      return ('assets/').concat(path);
+      return ('https://cdn.jsdelivr.net/gh/paung23/Articulate360ForKhaoNiewClassroom@main/assets/').concat(path);
     }
 
     function resolveFontPath(font) {
-      return ('lib/fonts/').concat(font.key.split('/').reverse()[0]);
+      return ('https://cdn.jsdelivr.net/gh/paung23/Articulate360ForKhaoNiewClassroom@main/lib/fonts/').concat(font.key.split('/').reverse()[0]);
     }
 
     function fetchAvailableLocales() {
